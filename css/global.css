@@ -22,24 +22,22 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /*头*/
 
-.menu{width:100%; height:120px;background:#fff; overflow:hidden; margin-left:auto; margin-right:auto;}
+.top{ background:#fff url(../images/top.png) no-repeat; width:1000px; height:135px; margin:0 auto;}
+.top p{ text-align:right; padding:70px 15px 0 0; color:#858585;}
+.top p a{ color:#858585; margin:0 5px;}
+.menu{ width:auto; height:71px; background:url(../images/nav.png) repeat-x;}
+.nav{ width:1000px; line-height:71px; margin:0 auto; font-size:16px;}
+.nav li{ float:left;  background:url(../images/nav_li.png) right center no-repeat; text-align:center; width:120px; padding:0 10px; display:inline;}
+.nav li a{ color:#fff;}
+.nav li.li_hover a,.nav li a:hover{ background:url(../images/nav_hover.png) bottom center  no-repeat; display:block;}
 
-.menu .nav{height:120px;overflow:hidden;background:#fff;float:left;}
-.menu .nav li{float:left;list-style:none;}
-.menu .nav li a{display:block; height:120px; padding:0 15px; line-height:120px; color:gray; text-decoration:none; position:relative; overflow:hidden;}
-.menu .nav li a:hover,.menu .nav li a.current{background:url(../img/nav_bg.gif) no-repeat center;}
-.menu .nav li a.f1{font-size:15px; font-family:Microsoft Yahei; color:#333;}
-.menu .nav li tt{display:block; float:right; background:url(../img/fgx.gif) no-repeat; width:11px; height:16px;margin-top:18px;}
-.menu .nav li .box{width:100%; position:absolute;height:59px; top:87px;left:0;padding-left:200px;background:#002496;display:none; z-index:9999;}
-.menu .nav li .box a{display:block;height:59px;float:left;color:#ddd;line-height:59px;border:none;background:none;font-size:15px;}
-.menu .nav li .box a:hover{text-decoration:none;color:#fff}
+
 
 .banners{height:59px; background:#002496;}
 .ban{width:960px;margin:auto; line-height:59px; }
 .ban a{font-size:15px; font-family:Microsoft Yahei;color:#ddd; padding:0 15px;}
 .ban a:hover{color:#fff; text-decoration:none;}
 
-.top{height:87px;background:url(../img/top_bg.gif) repeat-x;}
 .top_h,.top_nav{width:1200px;margin:auto;}
 .top_h .logo{width:272px; height:30px; background:url(../img/budilogo.jpg) no-repeat; margin-top:35px; float:left; }
 .logo{width:272px; height:150px; background:url(../img/budilogo.jpg) no-repeat; margin-top:5px; float:left; }
@@ -54,7 +52,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .top_h .top_h_r .top_h_info label a{color:#507642;}
 .top_h .top_h_r .top_h_info label a:hover{text-decoration:none;}
 
-.top_h_info{height:36px;overflow:hidden;}
+.top_h_info{height:36px;overflow:hidden;margin-right: 1%}
 .top_h_info p{margin-top:15px;margin-left:670px;}
 .top_h_info label{display:block; float:left; font-family:Microsoft Yahei; color:#507642;}
 .top_h_info label b{}
@@ -155,7 +153,7 @@ a.more:hover{text-decoration:none; color:#FFFF66;}
 
 /*尾*/
 .flooter{background:#2E3339;padding:40px 0;font-family:Verdana, Arial, Helvetica, sans-serif;clear:both;}
-.flooter_c,.conter{width:100%;margin:auto;}
+.flooter_c,.conter{width:90%;margin-left: 5%;margin-right: 5%}
 .flooter_left{width:750px;float:left;margin-right:10%;margin-left: 20%;}
 .flooter_right{width:360px;float:left;font-family:Microsoft Yahei; color:#777;}
 .flooter_right p{font-size:17px;line-height:1.8em;}

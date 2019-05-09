@@ -23,61 +23,23 @@
     </head>
 
     <body>
-
-        <!--头部-->
-        <div class="head">
-            <script type="text/javascript" src="js/jquery.min.js"></script>
-            <script>
-            $(function() {
-                var navLi = $(".menu .nav li");
-                navLi.mouseover(function() {
-                    $(this).find("a").addClass("current");
-                    $(this).find(".box").stop().slideDown();
-                })
-                navLi.mouseleave(function() {
-                    $(this).find("a").removeClass("current");
-                    $(this).find(".box").stop().slideUp();
-                })
-            })
-            </script>
-            <div class="menu">
-                <div class="logo"></div>
-                <!--搜索-->
-                <div class="top_h_info">
-                    <p><label class="i1">全国服务热线&nbsp;<b>18838035670</b></label><label class="i0">&nbsp;&nbsp;|&nbsp;&nbsp;</label><label class="i2"></label></p>
-                </div>
-                <ul class="nav">
-                    <li><a href="index.html" class="f1">首页</a></li>
-                    <li>
-                        <a href="about.html" class="f1">雅梦莎概况</a>
-                        <div class="box">
-                            <a href="">公司简介</a>
-                            <a href="news.html">董事长寄语</a>
-                            <a href="news.html">经营理念</a>
-                            <a href="news.html">组织架构</a>
-                            <a href="news.html">企业荣誉</a>
-                            <a href="contact.html">联系我们</a>
-                        </div>
-                    </li>
-                   <li>
-                        <a href="product_list.html" class="f1">产品展示</a>
-                        <div class="box">
-                            <a href="">床垫</a>
-                            <a href="">软床</a>
-                            <a href="">床品</a>
-                            <a href="">其它</a>
-                        </div>
-                    </li>
-                    <li><a href="" class="f1">营销网络</a></li>
-                    <li><a href="contact.html" class="f1">联系我们</a></li>
-                </ul>
-            </div>
-            <div class="clears"></div>
-        </div>
-        <div class="clears"></div>
-
-
-
+  <div class="top">
+  </div>
+  <!-- top end -->
+  <div class="menu">
+    <div class="nav">
+      <ul>
+        <li class="li_hover"><a href="index.html">首页</a></li>
+        <li><a href="news.html">公司简介</a></li>
+        <li><a href="product_list.html">产品介绍</a></li>
+        <li><a href="zsjm.html">招商加盟</a></li>
+        <li><a href="rczp.html">人才招聘</a></li>
+        <li style="background:none;"><a href="contact.html">联系我们</a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- nav end -->
         <div class="banner">
             <div id="demo01" class="flexslider">
                 <ul class="slides">
