@@ -1,177 +1,294 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>布迪兰卡</title>
+        <link rel="stylesheet" href="css/global.css" type="text/css" />
+        <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+        <script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+        <script type="text/javascript" src="js/ad.js"></script>
+        <script>
+            //选项卡
+            function setTab(m, n) {
+                var tli = document.getElementById("menu" + m).getElementsByTagName("li");
+                var mli = document.getElementById("main" + m).getElementsByTagName("ul");
+                for (i = 0; i < tli.length; i++) {
+                    tli[i].className = i == n ? "hover" : "";
+                    mli[i].style.display = i == n ? "block" : "none";
+                }
+            }
+        </script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="Page description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta name="description" content="description" />
-  <meta name="keyword" content="keywords" />
-  <link rel="icon" href="/commons/favicon.ico" type="image/x-icon">
+    </head>
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  
-  <title>布迪兰卡</title>  
+    <body>
 
-<link href="./main.82cfd66e.css" rel="stylesheet"></head>
-
-<body>
-
-<!-- Add your content of header -->
-<header class="">
-  <div class="navbar navbar-default visible-xs">
-    <button type="button" class="navbar-toggle collapsed">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a href="./index.html" class="navbar-brand">导航栏</a>
-  </div>
-
-  <nav class="sidebar">
-    <div class="navbar-collapse" id="navbar-collapse">
-      <ul class="nav">
-        <li><a href="./index.html" title="">主页</a></li>
-        <li><a href="./about.html" title="">关于</a></li>
-        <li><a href="./contact.html" title="">联系</a></li>
-
-      </ul>
-
-      <nav class="nav-footer">
-        <p class="nav-footer-social-buttons">
-        </p>
-        <p>Copyright©2019布迪兰卡</p>
-      </nav>  
-    </div> 
-  </nav>
-</header>
-<main class="" id="main-collapse">
-
-<!-- Add your site or app content here -->
- 
-<div class="hero-full-wrapper">
-  <div class="grid">
-  <div class="gutter-sizer"></div>
-    <div class="grid-sizer"></div>
-    
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-12.jpg">
-      <a href="./project.html" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>bed1</h3>
-            <p>查看更多详情</p>
-          </div>
+        <!--头部-->
+        <div class="head">
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script>
+            $(function() {
+                var navLi = $(".menu .nav li");
+                navLi.mouseover(function() {
+                    $(this).find("a").addClass("current");
+                    $(this).find(".box").stop().slideDown();
+                })
+                navLi.mouseleave(function() {
+                    $(this).find("a").removeClass("current");
+                    $(this).find(".box").stop().slideUp();
+                })
+            })
+            </script>
+            <div class="menu">
+                <div class="logo"></div>
+                <!--搜索-->
+                <div class="top_h_info">
+                    <p><label class="i1">全国服务热线&nbsp;<b>18838035670</b></label><label class="i0">&nbsp;&nbsp;|&nbsp;&nbsp;</label><label class="i2"></label></p>
+                </div>
+                <ul class="nav">
+                    <li><a href="index.html" class="f1">首页</a></li>
+                    <li>
+                        <a href="about.html" class="f1">雅梦莎概况</a>
+                        <div class="box">
+                            <a href="">公司简介</a>
+                            <a href="news.html">董事长寄语</a>
+                            <a href="news.html">经营理念</a>
+                            <a href="news.html">组织架构</a>
+                            <a href="news.html">企业荣誉</a>
+                            <a href="contact.html">联系我们</a>
+                        </div>
+                    </li>
+                   <li>
+                        <a href="product_list.html" class="f1">产品展示</a>
+                        <div class="box">
+                            <a href="">床垫</a>
+                            <a href="">软床</a>
+                            <a href="">床品</a>
+                            <a href="">其它</a>
+                        </div>
+                    </li>
+                    <li><a href="" class="f1">营销网络</a></li>
+                    <li><a href="contact.html" class="f1">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="clears"></div>
         </div>
-      </a>
-    </div>
+        <div class="clears"></div>
 
-    
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-05.jpg">
-      <a href="./project.html" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>bed2</h3>
-            <p>查看更多详情</p>
-          </div>
+
+
+        <div class="banner">
+            <div id="demo01" class="flexslider">
+                <ul class="slides">
+                    <li><div class="img"><img src="img/5.jpg" alt="" /></div></li>
+                    <li><div class="img"><img src="img/5.jpg" alt="" /></div></li>
+                    <li><div class="img"><img src="img/5.jpg" alt="" /></div></li>
+                </ul>
+            </div><!--flexslider end-->
+            <script type="text/javascript" src="js/slider.js"></script> 
+            <script type="text/javascript">
+            $(function() {
+
+                $('#demo01').flexslider({
+                    animation: "slide",
+                    direction: "horizontal",
+                    easing: "swing"
+                });
+
+            });
+            </script>
         </div>
-      </a>
-    </div>
-	<div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网站建设</a></div>
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
-      <a href="./project.html" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>bed3</h3>
-            <p>查看更多详情</p>
-          </div>
+
+
+        <div class="fgx3"><img src="img/pic1.gif" /></div>
+
+        <div class="conter">
+            <!--产品列表-->
+            <div class="products">
+                <ul>
+                    <li><a href="pruduct_detail.html"><img src="img/img-03" /><p>软床1</p></a></li>
+                    <li><a href="pruduct_detail.html"><img src="img/pur.gif" /><p>软床2</p></a></li>
+                    <li><a href="pruduct_detail.html"><img src="img/pur.gif" /><p>软床3</p></a></li>
+                    <li class="no1"><a href=""><img src="img/pur.gif" /><p>软床4</p></a></li>
+                    <li><a href="pruduct_detail.html"><img src="img/pur.gif" /><p>软床5</p></a></li>
+                    <li><a href="pruduct_detail.html"><img src="img/pur.gif" /><p>软床6</p></a></li>
+                    <li><a href="pruduct_detail.html"><img src="img/pur.gif" /><p>软床7</p></a></li>
+                    <li class="no1"><a href=""><img src="img/pur.gif" /><p>软床8</p></a></li>
+                    <li><a href="pruduct_detail.html"><img src="img/pur.gif" /><p>软床9</p></a></li>
+                    <li><a href="pruduct_detail.html"><img src="img/pur.gif" /><p>软床10</p></a></li>
+                    <li><a href="pruduct_detail.html"><img src="img/pur.gif" /><p>软床11</p></a></li>
+                    <li class="no1"><a href=""><img src="img/pur.gif" /><p>软床1</p></a></li>
+                </ul>
+            </div>
+            <div class="clears"></div>
+
+
+
+            <!--新闻列表-->
+            <a name="md1" id="md1"></a>
+            <div class="news">
+                <div class="news_right">
+                    <div class="news_nav">
+                        <ul id="menu2">
+                            <li onmouseover="setTab(2, 0)"><a href="" class="hover">雅梦莎新闻</a></li>
+                            <li onmouseover="setTab(2, 1)"><a href="">行业资讯</a></li>
+                            <li onmouseover="setTab(2, 2)"><a href="">专题活动</a></li>
+                            <li onmouseover="setTab(2, 3)"><a href="">睡眠常识</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="news_con" id="main2">
+                        <ul>
+                            <div class="newsc">
+                                <div class="newsc_top">
+                                    <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                    <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨：责任与奉献并举， 快速反应 细节取胜；经营目标：努力打造社会、消费者、经销商、股东、员工回报率最高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                </div>
+                                <div>
+
+
+
+                                    <div class="newsc_l">
+                                        <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                        <p class="newsnr bor2">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨：高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                        <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                        <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨回报率最高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                        <a href="" class="btn_a">查看更多...</a>                    </div>
+
+                                    <div class="newsc_r">
+                                        <span>2014-10-10</span>
+                                        <h2><a href="">睡眠管家提前放价玉溪站</a></h2>
+                                        <a href=""><img src="img/1.gif" /></a>
+                                        <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<br/><a href="" class="more">更多</a></p>
+                                    </div>
+                                    <div class="clears"></div>
+                                </div>
+                            </div>
+                        </ul>
+
+                        <ul style="display:none;">
+                            <div class="newsc">
+                                <div class="newsc_top">
+                                    <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                    <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨：责任与奉献并举， 快速反应 细节取胜；经营目标：努力打造社会、消费者、经销商、股东、员工回报率最高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                </div>
+                                <div>
+
+
+
+                                    <div class="newsc_l">
+                                        <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                        <p class="newsnr bor2">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨：高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                        <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                        <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨回报率最高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                        <a href="" class="btn_a">查看更多...</a>                    </div>
+
+                                    <div class="newsc_r">
+                                        <span>2014-10-10</span>
+                                        <h2><a href="">睡眠管家提前放价玉溪站</a></h2>
+                                        <a href=""><img src="img/1.gif" /></a>
+                                        <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<br/><a href="" class="more">更多</a></p>
+                                    </div>
+                                    <div class="clears"></div>
+                                </div>
+                            </div>
+                        </ul>
+
+                        <ul style="display:none;">
+                            <div class="newsc">
+                                <div class="newsc_top">
+                                    <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                    <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨：责任与奉献并举， 快速反应 细节取胜；经营目标：努力打造社会、消费者、经销商、股东、员工回报率最高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                </div>
+                                <div>
+
+
+
+                                    <div class="newsc_l">
+                                        <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                        <p class="newsnr bor2">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨：高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                        <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                        <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨回报率最高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                        <a href="" class="btn_a">查看更多...</a>                    </div>
+
+                                    <div class="newsc_r">
+                                        <span>2014-10-10</span>
+                                        <h2><a href="">睡眠管家提前放价玉溪站</a></h2>
+                                        <a href=""><img src="img/1.gif" /></a>
+                                        <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<br/><a href="" class="more">更多</a></p>
+                                    </div>
+                                    <div class="clears"></div>
+                                </div>
+                            </div>
+                        </ul>
+
+                        <ul style="display:none;">
+                            <div class="newsc">
+                                <div class="newsc_top">
+                                    <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                    <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨：责任与奉献并举， 快速反应 细节取胜；经营目标：努力打造社会、消费者、经销商、股东、员工回报率最高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                </div>
+                                <div>
+
+
+
+                                    <div class="newsc_l">
+                                        <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                        <p class="newsnr bor2">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨：高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                        <h2><span>2014-10-10</span><a href="">睡眠管家提前放价玉溪站，活动场景布置欣赏</a></h2>
+                                        <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅时尚生活方式企业宗旨回报率最高的寝具企业；企业精神：诚信待人、创新先行、品质为王、文化取胜。管理理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<a href="" class="more">更多</a></p>
+                                        <a href="" class="btn_a">查看更多...</a>                    </div>
+
+                                    <div class="newsc_r">
+                                        <span>2014-10-10</span>
+                                        <h2><a href="">睡眠管家提前放价玉溪站</a></h2>
+                                        <a href=""><img src="img/1.gif" /></a>
+                                        <p class="newsnr">企业使命：满足品质家居价值需求，铸造优雅理念：规范化 人性化 科学化企业座右铭：规范化 人性化 科学化企业座右铭：市场的眼睛是雪亮的！......<br/><a href="" class="more">更多</a></p>
+                                    </div>
+                                    <div class="clears"></div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="news_left">
+                    <div class="news_lc">
+                        <p>精英名片</p>
+                        <p><img src="img/mingpian.jpg" /></p>
+                        <p>官方微博：</p>
+                        <p><a href="" class="ic1"></a><a href="" class="ic2"></a><a href="" class="ic3"></a><div class="clears"></div></p>
+                        <p>AMSA雅梦莎寝具</p>
+                    </div>
+                </div>
+
+                <div class="clears"></div>
+            </div>
+
         </div>
-      </a>
-    </div>
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-04.jpg">
-      <a href="./project.html" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>bed4</h3>
-            <p>查看更多详情</p>
-          </div>
+
+        <!--底部-->
+        <div class="flooter">
+            <div class="flooter_c">
+                <div class="flooter_left links">
+                    <ul>
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">公司产品</a></li>
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="flooter_right">
+                    <div class="flooter_con"></div>
+                    <p class="tel">联系电话</p>
+                     <p class="tel">赵经理：18838035670 15039099238</p>
+                      <p class="tel">刘经理：15893362213</p>
+                       <p class="tel">何经理：18838079656 13253588908</p>
+                    <p>地址：郑州中博家居馆7号楼3楼</p>
+                    <p class="copy">Copyright 布迪兰卡家具商行</p>
+                </div>
+                <div class="clears"></div>
+            </div>
         </div>
-      </a>
-    </div>
-    
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-07.jpg">
-      <a href="./project.html" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>bed5</h3>
-            <p>查看更多详情</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-11.jpg">
-      <a href="./project.html" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>bed6</h3>
-            <p>查看更多详情</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-10.jpg">
-      <a href="./project.html" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>bed7</h3>
-            <p>查看更多详情</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-03.jpg">
-      <a href="./project.html" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>bed8</h3>
-            <p>查看更多详情</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    
-  </div>
-</div>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     masonryBuild();
-  });
-</script>
-
-</main>
-
-<script>
-document.addEventListener("DOMContentLoaded", function (event) {
-  navbarToggleSidebar();
-  navActivePage();
-});
-</script>
-
-<script type="text/javascript" src="./main.85741bff.js"></script></body>
-
+    </body>
 </html>
