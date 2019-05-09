@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>布迪兰卡</title>
         <link rel="stylesheet" href="css/global.css" type="text/css" />
         <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
@@ -18,20 +18,6 @@
                     mli[i].style.display = i == n ? "block" : "none";
                 }
             }
-            
-            var phoneWidth =  parseInt(window.screen.width);  
-            var phoneScale = phoneWidth/640;  
-            var ua = navigator.userAgent;  
-            if (/Android (\d+\.\d+)/.test(ua)){  
-                var version = parseFloat(RegExp.$1);  
-                if(version>2.3){  
-                    document.write(‘<meta name=”viewport” content=“width=640, minimum-scale = ‘+phoneScale+‘, maximum-scale = ‘+phoneScale+‘, target-densitydpi=device-dpi”>‘);  
-                }else{  
-                    document.write(‘<meta name=”viewport” content=“width=640, target-densitydpi=device-dpi”>‘);  
-                }  
-            } else {  
-                document.write(‘<meta name=”viewport” content=“width=640, user-scalable=no, target-densitydpi=device-dpi”>‘);  
-            }  
         </script>
 
     </head>
