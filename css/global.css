@@ -97,14 +97,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 .fgx3{height:57px; background:url(../img/fgx3.gif) repeat-x; text-align:center; padding-top:26px;}
 
 /*首页产品*/
-.products{width:2000px;margin-top:70px; overflow:hidden;vertical-align: middle;}
-.products ul li{width:470px;height:442px;float:left; margin-right:30px;margin-bottom:13px;}
-.products ul li a p{background:#3E4145; text-align:center; height:42px; line-height:42px; overflow:hidden; font-size:20px; font-family:Microsoft Yahei; color:#ddd;}
+.products{width:1200px;margin-top:70px; overflow:hidden;vertical-align: middle;}
+.products ul li{width:285px;height:242px;float:left; margin-right:15px;margin-bottom:13px;}
+.products ul li a p{background:#3E4145; text-align:center; height:42px; line-height:42px; overflow:hidden; font-size:12px; font-family:Microsoft Yahei; color:#ddd;}
 .products ul li a:hover{text-decoration:none;}
 .products ul li a:hover p{color:#FFFF66;}
 
 /*新闻*/
-.news{width:2000px;margin-top:70px; margin-bottom:70px; overflow:hidden;}
+.news{width:1200px;margin-top:70px; margin-bottom:70px; overflow:hidden;}
 .news_left{width:50%;float:left;}
 .news_right{width:50%;float:right;}
 
@@ -152,7 +152,7 @@ a.more:hover{text-decoration:none; color:#FFFF66;}
 
 /*尾*/
 .flooter{background:#2E3339;padding:40px 0;font-family:Verdana, Arial, Helvetica, sans-serif;clear:both;}
-.flooter_c,.conter{width:2000px;margin: auto;}
+.flooter_c,.conter{width:1200px;margin: auto;}
 .flooter_left{width:750px;float:left;}
 .flooter_right{width:360px;float:right;font-family:Microsoft Yahei; color:#777;}
 .flooter_right p{font-size:17px;line-height:1.8em;}
