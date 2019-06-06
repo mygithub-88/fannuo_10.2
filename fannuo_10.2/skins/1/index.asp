@@ -38,7 +38,7 @@ $(function(){
 		<div class="t3"><%=rss("c_seoname")%></div>
 		<div class="l20 plist">
 			<%
-			Set rs = ado_query("select top 8 * from cms_info where i_enable = 1 and i_parent in ("&rss("c_sub")&") order by i_order desc , id desc")
+			Set rs = ado_query("select top 12 * from cms_info where i_enable = 1 and i_parent in ("&rss("c_sub")&") order by i_order desc , id desc")
 			Do While Not rs.EOF
 			%>
 			<div class="x3">
